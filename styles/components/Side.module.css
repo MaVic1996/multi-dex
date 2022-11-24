@@ -1,0 +1,81 @@
+.rotate {
+  transform: rotate(180deg);
+}
+
+.topSide {
+  width: 350px;
+  height: 200px;
+  background-color: #c30d23;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+.leftSmallSquare {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-color: #47050e;
+  border-width: 10px;
+  border-style: none solid solid none;
+  border-radius: 0 0 100px 0;
+}
+
+.leftBigSquare {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-color: #47050e;
+  border-width: 10px;
+  border-style: none solid solid none;
+  border-radius: 0 0 130px 0;
+}
+
+.rightSmallSquare {
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-color: #47050e;
+  border-width: 10px;
+  border-style: none none solid solid;
+  border-radius: 0 0 0 100px;
+}
+
+.rightBigSquare {
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-color: #47050e;
+  border-width: 10px;
+  border-style:  none none solid solid;
+  border-radius: 0 0 0 130px;
+}
+
+.centerSemiCircle {
+  right: 50%;
+  bottom: -20px;
+  position:absolute;
+  transform: translateX(50%);
+  width: 240px;
+  height: 120px;
+  background-color: black;
+  border-radius: 120px 120px 0 0;
+}
+
+.smallSemiCircle {
+  right: 50%;
+  bottom: 0;
+  position:absolute;
+  transform: translateX(50%);
+  width: 120px;
+  height: 60px;
+  background-color: #abdfe7;
+  border-radius: 60px 60px 0 0;
+}
