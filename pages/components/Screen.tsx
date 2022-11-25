@@ -1,31 +1,21 @@
-import { useState } from "react";
+
 import styles from "../../styles/components/Screen.module.css";
 import { ImCross } from "react-icons/im";
+import { useOpenClosePokedex } from "../hooks/useOpenClosePokedex";
 
 const Screen = () => {
-  const [active, setActive] = useState(false);
-  const [show, setShow] = useState(true);
-
-  const handleActivate = () => {
-    setActive(true);
-    setTimeout(() => setShow(false), 1500);
-  };
-
-  const handleDeactivate = () => {
-    setShow(true);
-    setTimeout(() => setActive(false), 100);
-  };
+  const { active, showOpenButton, togglePokedex } = useOpenClosePokedex();
 
   return (
     <div className={[styles.screen, active ? styles.active : ""].join(" ")}>
-      {show ? (
+      {showOpenButton ? (
         <button
-          onClick={handleActivate}
+          onClick={togglePokedex}
           className={[styles.openButton, active ? styles.active : ""].join(" ")}
         ></button>
       ) : (
         <div className={styles.cross}>
-          <ImCross size={18} onClick={handleDeactivate}/>
+          <ImCross size={18} onClick={togglePokedex}/>
         </div>
       )}
     </div>
