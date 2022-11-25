@@ -35,4 +35,15 @@ a {
   --details-case-color: #47050e;
   --screen-color: #abdfe7;
   --interactive-screen-color: #82bec7;
+  --box-color: #559ad5;
+  --box-border: #89aeb4;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--interactive-screen-color);
+  border-radius: 20px;
 }

@@ -1,0 +1,38 @@
+
+
+
+.pokemonBox {
+  width: calc((100%/4) - 6px);
+  background: var(--box-color);
+  height: 70px;
+  margin: 3px;
+  border-radius: 12px / 50%;
+  position: relative;
+  border: 2px solid var(--box-border);
+  user-select: none;
+}
+
+.pokemonIdx {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  position: absolute;
+  right: 8px;
+  opacity: 0.2;
+  transition: opacity 300ms;
+  bottom: 0px;
+  cursor: pointer;
+}
+
+.pokemonImg {
+  transition: opacity 300ms;
+  opacity: 0.2;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.hover {
+  opacity: 1;
+}

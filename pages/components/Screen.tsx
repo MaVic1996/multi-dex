@@ -2,6 +2,7 @@
 import styles from "../../styles/components/Screen.module.css";
 import { ImCross } from "react-icons/im";
 import { useOpenClosePokedex } from "../hooks/useOpenClosePokedex";
+import ScreenContent from "./screen/ScreenContent";
 
 const Screen = () => {
   const { active, showOpenButton, togglePokedex } = useOpenClosePokedex();
@@ -14,9 +15,9 @@ const Screen = () => {
           className={[styles.openButton, active ? styles.active : ""].join(" ")}
         ></button>
       ) : (
-        <div className={styles.cross}>
-          <ImCross size={18} onClick={togglePokedex}/>
-        </div>
+        <><div className={styles.cross}>
+            <ImCross size={18} onClick={togglePokedex} />
+          </div><ScreenContent /></>
       )}
     </div>
   );

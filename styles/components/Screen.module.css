@@ -1,8 +1,8 @@
 
 .screen {
   background-color: var(--screen-color);
-  width: 340px;
-  height: 45px;
+  width: 370px;
+  height: 50px;
   z-index: 99;
   position: relative;
   transition: all 1.5s;
