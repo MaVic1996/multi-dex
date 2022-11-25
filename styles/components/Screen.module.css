@@ -1,6 +1,6 @@
 
 .screen {
-  background-color: #abdfe7;
+  background-color: var(--screen-color);
   width: 340px;
   height: 45px;
   z-index: 99;
@@ -20,8 +20,8 @@
   width: 100px;
   height: 100px;
   border:solid;
-  border-color: #82bec7;
-  background-color: #abdfe7;
+  border-color: var(--interactive-screen-color);
+  background-color: var(--screen-color);
   border-width: 30px;
   border-radius: 50%;
   cursor: pointer;
@@ -36,10 +36,11 @@
 
 .cross {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  bottom: -30px;
+  left:50%;
+  transform: translate(-50%);
   cursor: pointer;
 }
 .cross svg {
-  fill: #82bec7;
+  fill: var(--interactive-screen-color);
 }

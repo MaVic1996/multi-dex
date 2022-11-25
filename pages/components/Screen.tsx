@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from "../../styles/components/Screen.module.css";
-
 import { ImCross } from "react-icons/im";
 
 const Screen = () => {
@@ -26,7 +25,7 @@ const Screen = () => {
         ></button>
       ) : (
         <div className={styles.cross}>
-          <ImCross onClick={handleDeactivate}/>
+          <ImCross size={18} onClick={handleDeactivate}/>
         </div>
       )}
     </div>

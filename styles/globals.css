@@ -29,3 +29,10 @@ a {
     background: black;
   }
 }
+
+:root {
+  --main-case-color: #c30d23;
+  --details-case-color: #47050e;
+  --screen-color: #abdfe7;
+  --interactive-screen-color: #82bec7;
+}

@@ -5,7 +5,7 @@
 .topSide {
   width: 350px;
   height: 200px;
-  background-color: #c30d23;
+  background-color: var(--main-case-color);
   border-radius: 15px 15px 0 0;
   position: relative;
 }
@@ -16,7 +16,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  border-color: #47050e;
+  border-color: var(--details-case-color);
   border-width: 10px;
   border-style: none solid solid none;
   border-radius: 0 0 100px 0;
@@ -28,7 +28,7 @@
   position: absolute;
   width: 120px;
   height: 120px;
-  border-color: #47050e;
+  border-color: var(--details-case-color);
   border-width: 10px;
   border-style: none solid solid none;
   border-radius: 0 0 130px 0;
@@ -40,7 +40,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  border-color: #47050e;
+  border-color: var(--details-case-color);
   border-width: 10px;
   border-style: none none solid solid;
   border-radius: 0 0 0 100px;
@@ -52,7 +52,7 @@
   position: absolute;
   width: 120px;
   height: 120px;
-  border-color: #47050e;
+  border-color: var(--details-case-color);
   border-width: 10px;
   border-style:  none none solid solid;
   border-radius: 0 0 0 130px;
@@ -76,6 +76,6 @@
   transform: translateX(50%);
   width: 120px;
   height: 60px;
-  background-color: #abdfe7;
+  background-color: var(--screen-color);
   border-radius: 60px 60px 0 0;
 }
