@@ -9,3 +9,20 @@
   overflow-y: auto;
   scroll-behavior: smooth;
 }
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  stroke: var(--interactive-screen-color);
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
