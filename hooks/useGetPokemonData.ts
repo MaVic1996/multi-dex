@@ -1,12 +1,30 @@
+import { PokemonInfo } from "./../types/PokemonInfo.d";
 import { PokemonInfoResponse } from "./../pages/api/pokemonInfo";
+
 const useGetPokemonData = () => {
-  const parseResponse = (response: PokemonInfoResponse) => {
-    if (!response["info"]) return {};
+  const parseResponse: (response: PokemonInfoResponse) => PokemonInfo | {} = (
+    response: PokemonInfoResponse
+  ) => {
+    const { info, species } = response;
+    if (!info) return {};
+    const types = info["types"].map((type: any) =>
+      type["type"]["name"].toUpperCase()
+    );
+    let detail = "";
+    if (!!species) {
+      const detailInfo = species["genera"].find(
+        (entry: any) => entry["language"]["name"] == "en"
+      );
+      detail = detailInfo?.["genus"] || "";
+    }
     return {
-      img: response["info"]["sprites"]["other"]["official-artwork"][
-        "front_default"
-      ],
-      name: response["info"]["name"],
+      imgSrc:
+        info["sprites"]["other"]["official-artwork"]["front_default"] || "",
+      name: info["name"] || "",
+      types: types || [],
+      weight: info["weight"] / 10 || "-",
+      height: info["height"] / 10 || "-",
+      detail: detail,
     };
   };
 

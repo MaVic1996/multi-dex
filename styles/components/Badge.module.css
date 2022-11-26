@@ -1,0 +1,71 @@
+.badge {
+  font-size: 14px;
+  border: 1px solid white;
+  box-shadow: 0 0 1px 0.1px white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 0 4px;
+  border-radius: 5px / 50%;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.normal {
+  background-color: var(--type-normal);
+}
+.fighting {
+  background-color: var(--type-fighting);
+}
+.flying {
+  background-color: var(--type-flying);
+}
+.poison {
+  background-color: var(--type-poison);
+}
+.ground {
+  background-color: var(--type-ground);
+}
+.rock {
+  background-color: var(--type-rock);
+}
+.bug {
+  background-color: var(--type-bug);
+}
+.ghost {
+  background-color: var(--type-ghost);
+}
+.steel {
+  background-color: var(--type-steel);
+}
+.fire {
+  background-color: var(--type-fire);
+}
+.water {
+  background-color: var(--type-water);
+}
+.grass {
+  background-color: var(--type-grass);
+}
+.electric {
+  background-color: var(--type-electric);
+}
+.psychic {
+  background-color: var(--type-psychic);
+}
+.ice {
+  background-color: var(--type-ice);
+}
+.dragon {
+  background-color: var(--type-dragon);
+}
+.dark {
+  background-color: var(--type-dark);
+}
+.fairy {
+  background-color: var(--type-fairy);
+}
+.unknown {
+  background-color: var(--type-unknown);
+}
+.shadow {
+  background-color: var(--type-shadow);
+}

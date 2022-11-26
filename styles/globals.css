@@ -7,7 +7,6 @@ body {
   font-size: 18px;
   font-weight: 600;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  
 }
 
 #__next{
@@ -38,8 +37,28 @@ a {
   --details-case-color: #47050e;
   --screen-color: #abdfe7;
   --interactive-screen-color: #82bec7;
+  --interactive-screen-color-dark: #5e8a91;
   --box-color: #559ad5;
   --box-border: #89aeb4;
+
+  --type-normal: #ACA692;
+  --type-fighting: #5E2313;
+  --type-flying: #a0b0f0;
+  --type-poison: #732A74;
+  --type-ground: #b69b53;
+  --type-rock: #998238;
+  --type-bug: #88950B;
+  --type-ghost: #444692;
+  --type-steel: #908F9E;
+  --type-fire: #C72000;
+  --type-water: #0C67C3;
+  --type-grass: #379800;
+  --type-electric: #E79306;
+  --type-psychic: #DD3066;
+  --type-ice: #6BD3F4;
+  --type-dragon: #624ec7;
+  --type-dark: #3E2D24;
+  --type-fairy: #DE8FE0;
 }
 
 ::-webkit-scrollbar {

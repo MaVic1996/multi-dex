@@ -41,6 +41,15 @@
   transform: translate(-50%);
   cursor: pointer;
 }
+
+.cross:hover svg{
+  fill: var(--interactive-screen-color-dark);
+  width: 20px;
+  height: 20px;
+}
+
 .cross svg {
   fill: var(--interactive-screen-color);
+  transition: fill 1s, width 200ms, height 200ms;
+  
 }
