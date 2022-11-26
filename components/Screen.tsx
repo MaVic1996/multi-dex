@@ -1,5 +1,5 @@
 
-import styles from "../../styles/components/Screen.module.css";
+import styles from '../styles/components/Screen.module.css';
 import { ImCross } from "react-icons/im";
 import { useOpenClosePokedex } from "../hooks/useOpenClosePokedex";
 import ScreenContent from "./screen/ScreenContent";

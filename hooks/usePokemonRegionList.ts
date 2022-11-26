@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { getPokedexList } from "../api/pokedexData";
 
 const usePokemonRegionList = ({ region }: { region: string }) => {
   const [pokemonData, setPokemonData] = useState<any>([]);
@@ -8,16 +7,11 @@ const usePokemonRegionList = ({ region }: { region: string }) => {
   useEffect(() => {
     const loadData = async () => {
       setLoading(true);
-      const data = await (await getPokedexList(region)).json();
+      const url = `http://localhost:3000/api/pokedata?region=${region}`;
+      const response = await (await fetch(url)).json();
 
-      const pokemonEntries = data["pokemon_entries"].map(
-        (entry: Record<string, Record<string, string>>) => {
-          const splitted = entry["pokemon_species"]["url"].split("/");
-          return splitted[splitted.length - 2];
-        }
-      );
+      setPokemonData(response["pokedexList"]);
 
-      setPokemonData(pokemonEntries);
       setTimeout(() => setLoading(false), 1500);
     };
     loadData();

@@ -1,4 +1,4 @@
-import styles from "../../../styles/components/screen/ScreenContent.module.css";
+import styles from "../../styles/components/screen/ScreenContent.module.css";
 import usePokemonRegionList from "../../hooks/usePokemonRegionList";
 import Box from "./Box";
 import {TbPokeball} from 'react-icons/tb';

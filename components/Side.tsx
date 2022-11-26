@@ -1,4 +1,4 @@
-import styles from "../../styles/components/Side.module.css";
+import styles from "../styles/components/Side.module.css";
 
 const Side = ({ rotate }: { rotate?: boolean }) => {
   return (

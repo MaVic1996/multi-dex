@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../../../styles/components/screen/Box.module.css";
+import styles from "../../styles/components/screen/Box.module.css";
 
 const Box = ({ pokeNum, idx }: { pokeNum: number | string; idx: number }) => {
   const [hover, setHover] = useState(false);
