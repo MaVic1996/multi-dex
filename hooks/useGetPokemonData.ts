@@ -18,6 +18,7 @@ const useGetPokemonData = () => {
       detail = detailInfo?.["genus"] || "";
     }
     return {
+      id: info["id"],
       imgSrc:
         info["sprites"]["other"]["official-artwork"]["front_default"] || "",
       name: info["name"] || "",
@@ -28,8 +29,8 @@ const useGetPokemonData = () => {
     };
   };
 
-  const getPokemonInfo = async (data: string | number) => {
-    const url = `${window.location.href}/api/pokemonInfo?pokemonId=${data}`;
+  const getPokemonInfo = async (pokemonId: string | number) => {
+    const url = `${window.location.href}/api/pokemonInfo?pokemonId=${pokemonId}`;
     const response = await (await fetch(url)).json();
 
     return parseResponse(response);

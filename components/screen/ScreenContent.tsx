@@ -27,7 +27,7 @@ const ScreenContent = () => {
           <Box key={idx} idx={idx + 1} pokeNum={data} onClick={() => obtainPokemonData(data)}></Box>
         ))}
         
-        <PokemonInfo closeInfo={() => setOpen(false)} isOpen={isOpen} pokemonInfo={pokemonInfo} />
+        <PokemonInfo pokemonIdx={pokedexData.indexOf(pokemonInfo?.id.toString()) + 1} closeInfo={() => setOpen(false)} isOpen={isOpen} pokemonInfo={pokemonInfo} />
     </div>)
   );
 };

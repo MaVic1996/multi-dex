@@ -1,4 +1,5 @@
 export type PokemonInfo = {
+  id: number;
   name: string;
   imgSrc: string;
   types: PokemonType[];

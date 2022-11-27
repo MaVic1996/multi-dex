@@ -7,10 +7,12 @@ import { ImCross } from "react-icons/im";
 
 const PokemonInfo = ({
   pokemonInfo,
+  pokemonIdx,
   isOpen,
   closeInfo,
 }: {
   pokemonInfo?: PokemonInfo;
+  pokemonIdx: number; 
   isOpen: boolean;
   closeInfo: () => void;
 }) => {
@@ -35,7 +37,7 @@ const PokemonInfo = ({
         <img className={styles.image} src={pokemonInfo.imgSrc} alt={pokemonInfo.name} />
        </picture>
        <div className={styles.basicData}>
-        <div className={styles.nameData}>{pokemonInfo.name}</div>
+        <div className={styles.nameData}>{pokemonInfo.name} <div>Nº {(`000${pokemonIdx}`).substring(`000${pokemonIdx}`.length - 3)}</div></div>
         <div  className={styles.detail}>{pokemonInfo.detail}</div>
         <div className={styles.info}>Type: <div>{pokemonInfo.types.map((type, idx) => <Badge key={`${type}-${idx}`} type={type} />)}</div></div>
         <div className={styles.info}>HEIGHT: <div>{pokemonInfo.height} m</div></div>
