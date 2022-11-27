@@ -7,6 +7,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
 }
 
 #__next{
@@ -27,8 +28,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    background: var(--dark-color)
   }
 }
 
@@ -40,6 +40,7 @@ a {
   --interactive-screen-color-dark: #5e8a91;
   --box-color: #559ad5;
   --box-border: #89aeb4;
+  --dark-color: #131313;
 
   --type-normal: #ACA692;
   --type-fighting: #5E2313;
