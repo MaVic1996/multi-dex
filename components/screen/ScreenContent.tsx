@@ -20,7 +20,7 @@ const ScreenContent = () => {
 
 
   return (
-    loading ? <TbPokeball className={styles.loading} /> : (
+    loading ? <div className={styles.loading}><TbPokeball /></div> : (
     <div className={styles.content}>
       {!!pokedexData &&
         pokedexData.map((data: number | string, idx: number) => (
