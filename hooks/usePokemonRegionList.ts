@@ -7,7 +7,7 @@ const usePokemonRegionList = ({ region }: { region: string }) => {
   useEffect(() => {
     const loadData = async () => {
       setLoading(true);
-      const url = `${window.location.href}/api/pokedata?region=${region}`;
+      const url = `${window.location.origin}/api/pokedata?region=${region}`;
       const response = await (await fetch(url)).json();
 
       setPokedexData(response["pokedexList"]);

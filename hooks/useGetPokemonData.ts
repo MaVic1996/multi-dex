@@ -30,7 +30,7 @@ const useGetPokemonData = () => {
   };
 
   const getPokemonInfo = async (pokemonId: string | number) => {
-    const url = `${window.location.href}/api/pokemonInfo?pokemonId=${pokemonId}`;
+    const url = `${window.location.origin}/api/pokemonInfo?pokemonId=${pokemonId}`;
     const response = await (await fetch(url)).json();
 
     return parseResponse(response);
