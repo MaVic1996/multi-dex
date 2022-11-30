@@ -28,7 +28,7 @@ a {
     color-scheme: dark;
   }
   body {
-    background: var(--dark-color)
+    background: var(--dark-color);
   }
 }
 
@@ -40,7 +40,9 @@ a {
   --interactive-screen-color-dark: #5e8a91;
   --box-color: #559ad5;
   --box-border: #89aeb4;
+
   --dark-color: #131313;
+  --bright-color: #a9b4be;
 
   --type-normal: #ACA692;
   --type-fighting: #5E2313;
