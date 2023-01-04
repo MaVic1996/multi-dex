@@ -12,7 +12,12 @@ export default function Home() {
       </Head>
       <h1>Choose Pokedex</h1>
       <div className={styles.pokedexOpts}>
-        <Link href='/kalos' className={styles.pokedexOpt}>
+        <Link href='/kanto' className={styles.pokedexOpt}>
+          <picture>
+            <img className={styles.pokedexImg} src='/img/kanto.webp' alt='Kalos Pokedex'></img>
+          </picture>
+          <div>Kalos Pokedex</div></Link>
+          <Link href='/kalos' className={styles.pokedexOpt}>
           <picture>
             <img className={styles.pokedexImg} src='/img/kalos.webp' alt='Kalos Pokedex'></img>
           </picture>

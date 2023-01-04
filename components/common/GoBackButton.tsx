@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
-import styles from "../styles/components/GoBackButton.module.css";
+import styles from "../../styles/components/common/GoBackButton.module.css";
 import { IoMdArrowRoundBack } from "react-icons/io";
 
 const GoBackButton = () => {
