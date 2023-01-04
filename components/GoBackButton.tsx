@@ -11,7 +11,7 @@ const GoBackButton = () => {
 
   return isRoot ? null : (
     <Link href="/" className={styles.goBackButton}>
-      <IoMdArrowRoundBack size={24} />
+      <IoMdArrowRoundBack />
     </Link>
   );
 };

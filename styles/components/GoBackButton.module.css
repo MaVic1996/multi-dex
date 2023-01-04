@@ -22,9 +22,11 @@
 .goBackButton > svg {
   fill: var(--dark-color);
   transition: all 300ms ease-in-out;
+  width: 24px;
+  height: 24px;
 }
 
 .goBackButton:hover > svg {
-  width: 34px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
 }
