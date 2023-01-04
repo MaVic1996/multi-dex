@@ -1,6 +1,12 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import GoBackButton from "../components/GoBackButton";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <GoBackButton />
+      <Component {...pageProps} />
+    </>
+  );
 }
