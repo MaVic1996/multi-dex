@@ -1,7 +1,6 @@
-
-import styles from '../styles/components/Screen.module.css';
+import styles from "../../styles/components/kalos/Screen.module.css";
 import { ImCross } from "react-icons/im";
-import { useOpenClosePokedex } from "../hooks/useOpenClosePokedex";
+import { useOpenClosePokedex } from "../../hooks/kalos/useOpenClosePokedex";
 import ScreenContent from "./screen/ScreenContent";
 
 const Screen = () => {
@@ -15,9 +14,12 @@ const Screen = () => {
           className={[styles.openButton, active ? styles.active : ""].join(" ")}
         ></button>
       ) : (
-        <><div className={styles.cross}>
+        <>
+          <div className={styles.cross}>
             <ImCross size={18} onClick={togglePokedex} />
-          </div><ScreenContent /></>
+          </div>
+          <ScreenContent />
+        </>
       )}
     </div>
   );

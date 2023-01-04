@@ -1,8 +1,8 @@
-import styles from "../styles/components/Side.module.css";
+import styles from "../../styles/components/kalos/Side.module.css";
 
 const Side = ({ rotate }: { rotate?: boolean }) => {
   return (
-    <div className={[styles.topSide, rotate? styles.rotate : ''].join(' ')}>
+    <div className={[styles.topSide, rotate ? styles.rotate : ""].join(" ")}>
       <div className={styles.leftSmallSquare}></div>
       <div className={styles.rightBigSquare}></div>
       <div className={styles.rightSmallSquare}></div>

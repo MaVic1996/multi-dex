@@ -1,4 +1,4 @@
-import Pokedex from "../../components/Pokedex";
+import Pokedex from "../../components/kalos/Pokedex";
 
 const Kalos = () => {
   return (

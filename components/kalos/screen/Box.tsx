@@ -1,7 +1,15 @@
 import { useState } from "react";
-import styles from "../../styles/components/screen/Box.module.css";
+import styles from "../../../styles/components/kalos/screen/Box.module.css";
 
-const Box = ({ pokeNum, idx, onClick }: { pokeNum: number | string; idx: number; onClick: ()=> void }) => {
+const Box = ({
+  pokeNum,
+  idx,
+  onClick,
+}: {
+  pokeNum: number | string;
+  idx: number;
+  onClick: () => void;
+}) => {
   const [hover, setHover] = useState(false);
 
   return (
