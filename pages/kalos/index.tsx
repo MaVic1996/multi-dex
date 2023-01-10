@@ -1,19 +1,13 @@
-import Pokedex from "../../components/kalos/Pokedex";
+import Screen from "../../components/kalos/Screen";
+import Side from "../../components/kalos/Side";
 
 const Kalos = () => {
   return (
-    <div
-      style={{
-        padding: "0 2rem",
-        height: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <Pokedex />
-    </div>
+    <>
+      <Side />
+      <Screen></Screen>
+      <Side rotate />
+    </>
   );
 };
 
