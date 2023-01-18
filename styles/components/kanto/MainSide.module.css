@@ -1,7 +1,7 @@
 .mainSide {
   width: 270px;
-  height: 400px;
-  background: red;
+  height: 420px;
+  background: #d70e2d;
   display: flex;
   flex-direction: column;
   border-radius: 10px 10px 0 10px;

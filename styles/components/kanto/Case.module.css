@@ -1,5 +1,6 @@
 .case {
-  height: 320px;
+  height: 360px;
   width: 230px;
-  background: red;
+  background: #d70e2d;
+  border-bottom-right-radius: 10px;
 }

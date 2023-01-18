@@ -1,9 +1,9 @@
 import styles from "../../styles/components/kanto/MainSide.module.css";
-import TopLimitLine from "./mainSide/TopLimitLine";
+import TopSide from "./mainSide/TopSide";
 
 const MainSide = () => (
   <div className={styles.mainSide}>
-    <TopLimitLine />
+    <TopSide/>
   </div>
 );
 
