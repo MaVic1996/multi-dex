@@ -16,8 +16,8 @@
   box-shadow: 0 0 0 4px whitesmoke, 0 0 0 6px black;
 }
 
-.semaphore { 
-  margin: 15px 10px;
+.semaphore {
+  margin: 10px 5px;
   border-radius: 50%;
   height: 10px;
   width: 10px;
@@ -25,8 +25,7 @@
 }
 
 .red {
-  margin: 15px;
-  margin-right: 10px;
+  margin-left: 0;
   background-color: #ad0011;
 }
 
@@ -41,19 +40,19 @@
 .horizontalLimit {
   position: absolute;
   bottom: 15px;
-  width: 139.5px;
+  width: 130px;
   height: 2px;
   background: black;
 }
 
 .diagonalLimit {
   position: absolute;
-  bottom: 27px;
-  left: 137px;
-  width: 50px;
-  height: 1.5px;
+  bottom: 38px;
+  left: 118px;
+  width: 55px;
+  height: 1.9px;
   background: black;
-  transform: rotate(-30deg);
+  transform: rotate(-54deg);
 }
 
 .limit1 {
@@ -61,7 +60,7 @@
 }
 
 .limit2 {
-  bottom: 40px;
-  width: 85px;
-  left: 184px;
+  bottom: 60px;
+  width: 109px;
+  left: 161px;
 }
