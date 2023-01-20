@@ -25,9 +25,9 @@
   width: 100%;
 }
 
-.hingeSmall:first-of-type::before, 
+.hingeSmall:first-of-type::before,
 .hingeSmall:last-of-type::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 50%;
   transform: translate(50%);
@@ -44,8 +44,8 @@
 }
 
 .hingeSmall:last-of-type::before {
-border-style: none solid solid solid;
-bottom: -3.5px;
+  border-style: none solid solid solid;
+  bottom: -3.5px;
 }
 
 .hingeBig {
