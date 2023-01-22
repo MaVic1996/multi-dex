@@ -16,19 +16,19 @@
 
 .voidTriangle {
   position: absolute;
-  border-bottom: 46px solid transparent;
-  border-right: 35px solid var(--dark-color);
+  border-bottom: 47px solid transparent;
+  border-right: 36px solid var(--dark-color);
   border-top: 0 solid transparent;
-  left: 100px;
-  top: -2px;
+  left: 99px;
+  top: -3px;
 }
 
 .voidRectangle {
   position: absolute;
   background-color: var(--dark-color);;
-  height: 45.7px;
+  height: 46.7px;
   width: 135px;
-  top: -2px;
+  top: -3px;
   right: -2px;
   border-bottom: 2px solid black;
 }

@@ -1,0 +1,55 @@
+.caseBorderContainer {
+  width: 100%;
+  position: relative;
+}
+.mirror {
+  transform: rotateY('180deg');
+}
+
+.caseBorderContainer > * {
+  position: absolute;
+  background-color: black;
+}
+
+.horizontal {
+  height: 1px;
+  left: 20px;
+}
+
+.vertical {
+  width: 1px;
+  height: 322px;
+  top: 48px;
+  right: 4px;
+}
+
+.diagonal {
+  height: 1px;
+  top: 26px;
+  left: 86px;
+  width: 54px;
+  transform: rotate(54deg);
+}
+
+.left {
+  height: 366px;
+  top: 4px;
+  left: 20px;
+}
+
+
+.top:first-of-type {
+  width: 77px;
+  top: 4px;
+}
+
+.top:nth-of-type(2){
+  left: 128px;
+  top: 48px;
+  width: 134px;
+}
+
+.bottom {
+  top: 370px;
+  width: 242px;
+}
